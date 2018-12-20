@@ -1,0 +1,183 @@
+Step: build-step-credential-initializer:
+
+Step: build-step-git-source:
+
+Step: build-step-jenkins:
+
+Picked up _JAVA_OPTIONS: -Xmx2048m
+Started
+Running in Durability level: PERFORMANCE_OPTIMIZED
+  29.936 [id=31]	WARNING	i.f.k.c.i.VersionUsageUtils#alert: The client is using resource type 'customresourcedefinitions' with unstable version 'v1beta1'
+[Pipeline] node
+Running on Jenkins in /tmp/jenkinsTests.tmp/jenkins4877197836660923565test/workspace/job
+[Pipeline] {
+  47.972 [id=42]	WARNING	o.j.plugins.workflow.cps.DSL#invokeStep: Error storing the arguments for step: checkout
+org.kohsuke.stapler.NoStaplerConstructorException: There's no @DataBoundConstructor on any constructor of class io.jenkins.jenkinsfile.runner.FileSystemSCM
+	at org.kohsuke.stapler.ClassDescriptor.loadConstructorParamNames(ClassDescriptor.java:265)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.<init>(DescribableModel.java:144)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.of(DescribableModel.java:114)
+	at org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl.sanitizeObjectAndRecordMutation(ArgumentsActionImpl.java:294)
+	at org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl.sanitizeMapAndRecordMutation(ArgumentsActionImpl.java:386)
+	at org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl.<init>(ArgumentsActionImpl.java:74)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:245)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:178)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:122)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at com.cloudbees.groovy.cps.sandbox.DefaultInvoker.methodCall(DefaultInvoker.java:20)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
+	at sun.reflect.GeneratedMethodAccessor149.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.get(PropertyishBlock.java:76)
+	at com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)
+	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.fixName(PropertyishBlock.java:66)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:174)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:163)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:129)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:268)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:163)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$101(SandboxContinuable.java:34)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.lambda$run0$0(SandboxContinuable.java:59)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:58)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:182)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:332)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$200(CpsThreadGroup.java:83)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:244)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:232)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:131)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withCredentials
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (CI Build)
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] sh
++ jx step git credentials
+Generated Git credentials file /home/jenkins/git/credentials
+[Pipeline] dir
+Running in /home/jenkins/go/src/github.com/jenkins-x/godog-jx
+[Pipeline] {
+[Pipeline] git
+Cloning the remote Git repository
+Cloning repository https://github.com/jenkins-x/godog-jx
+ > git init /home/jenkins/go/src/github.com/jenkins-x/godog-jx # timeout=10
+Fetching upstream changes from https://github.com/jenkins-x/godog-jx
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jenkins-x/godog-jx +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jenkins-x/godog-jx # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jenkins-x/godog-jx # timeout=10
+Fetching upstream changes from https://github.com/jenkins-x/godog-jx
+ > git fetch --tags --progress https://github.com/jenkins-x/godog-jx +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0356a497646daf975194088d1f68d132be5521b0 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0356a497646daf975194088d1f68d132be5521b0
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master 0356a497646daf975194088d1f68d132be5521b0
+Commit message: "Update README.md"
+First time build. Skipping changelog.
+[Pipeline] sh
++ make configure-ghe
+echo "Setting up GitHub Enterprise support for user **** email: testuser@acme.com"
+Setting up GitHub Enterprise support for user **** email: testuser@acme.com
+jx create git server github https://github.beescloud.com -n GHE
+Added Git server GHE for URL https://github.beescloud.com
+already has GitService ghe in namespace jx for URL https://github.beescloud.com
+Ensured we have a GitService called GHE for URL https://github.beescloud.com in namespace jx
+jx --version
+1.3.661
+jx get git server
+Name   Kind   URL
+GHE    github https://github.beescloud.com
+GitHub github https://github.com
+#jx delete git server github.com 
+jx create git token -n GHE **** -t ****
+already has GitService ghe in namespace jx for URL https://github.beescloud.com
+Ensured we have a GitService called GHE for URL https://github.beescloud.com in namespace jx
+Created user **** API Token for Git server GHE at https://github.beescloud.com
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] sh
++ ./jx/scripts/ci-gke.sh
++ gcloud auth activate-service-account --key-file ****
+Activated service account credentials for: [jx-212@jenkinsx-dev.iam.gserviceaccount.com]
++ git config --global --add user.name JenkinsXBot
++ git config --global --add user.email jenkins-x@googlegroups.com
++ jx create cluster gke -n jxce-pr-240-1 --skip-login=true --batch-mode --labels kind=bdd,git=ghe --project-id jenkinsx-dev --zone europe-west1-c --machine-type n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 --default-****-password **** --git-provider-url https://github.beescloud.com --local-cloud-environment=true --default-environment-prefix=b1 --environment-git-owner=jenkins-x-tests
+Updated property [core/project].
+Let's ensure we have container and compute enabled on your project via: gcloud services enable container compute
+Operation "operations/acf.cddc5cb5-4d09-477e-a49a-159a3ed82de2" finished successfully.
+Creating cluster...
+Initialising cluster ...
+Namespace jx created 
+ Using helmBinary helm with feature flag: none
+Context "gke_jenkinsx-dev_europe-west1-c_jxce-pr-240-1" modified.
+Storing the kubernetes provider gke in the TeamSettings
+Git configured for user: JenkinsXBot and email jenkins-x@googlegroups.com
+Trying to create ClusterRoleBinding jx-212-jenkinsx-dev-iam-gserviceaccount-com-cluster-****-binding for role: cluster-**** for user jx-212@jenkinsx-dev.iam.gserviceaccount.com
+ clusterrolebindings.rbac.authorization.k8s.io "jx-212-jenkinsx-dev-iam-gserviceaccount-com-cluster-****-binding" not found
+Created ClusterRoleBinding jx-212-jenkinsx-dev-iam-gserviceaccount-com-cluster-****-binding
+Using helm2
+Configuring tiller
+Created ServiceAccount tiller in namespace kube-system
+Trying to create ClusterRoleBinding tiller for role: cluster-**** and ServiceAccount: kube-system/tiller
+Created ClusterRoleBinding tiller
+Initialising helm using ServiceAccount tiller in namespace kube-system
+retrying after error:failed to run 'helm init --service-account tiller --tiller-namespace kube-system --upgrade --wait --force-upgrade' command in directory '', output: '$HELM_HOME has been configured at /builder/home/.helm.
+Error: error when upgrading: Operation cannot be fulfilled on deployments.extensions "tiller-deploy": the object has been modified; please apply your changes to the latest version and try again': exit status 1
+Using helm2
+Configuring tiller
+retrying after error:existing tiller deployment found but not running, please check the kube-system namespace and resolve any issues
+Using helm2
+Configuring tiller
+helm init failed: after 3 attempts, last error: existing tiller deployment found but not running, please check the kube-system namespace and resolve any issues
+error creating cluster initializing the Jenkins X platform: failed to initialize the jx: after 3 attempts, last error: existing tiller deployment found but not running, please check the kube-system namespace and resolve any issues
+error: initializing the Jenkins X platform: failed to initialize the jx: after 3 attempts, last error: existing tiller deployment found but not running, please check the kube-system namespace and resolve any issues
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build and Push Release)
+Stage "Build and Push Release" skipped due to earlier failure(s)
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE
